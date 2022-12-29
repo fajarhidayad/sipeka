@@ -6,6 +6,7 @@ import {
   HStack,
   Heading,
   Text,
+  Image,
 } from "@chakra-ui/react";
 import { useState } from "react";
 import Link from "next/link";
@@ -22,7 +23,18 @@ const Navbar = () => {
       <Container maxW={"1280px"}>
         <Flex alignItems={"center"} justify="space-between">
           <Heading fontSize={"xl"} color="gray.600">
-            <Link href={"/"}>Sipeka</Link>
+            <Link href={"/"}>
+              <Flex alignItems={"center"}>
+                <Image
+                  src="/images/chicken.png"
+                  alt="ayam-icon"
+                  w="20px"
+                  h="20px"
+                />
+                <Spacer w={"10px"} />
+                Sipeka
+              </Flex>
+            </Link>
           </Heading>
           <HStack spacing={"20px"} display={{ base: "none", md: "flex" }}>
             <Link href="/">Beranda</Link>

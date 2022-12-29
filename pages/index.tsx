@@ -2,6 +2,7 @@ import {
   Box,
   Button,
   Container,
+  Divider,
   Flex,
   Heading,
   SimpleGrid,
@@ -24,12 +25,11 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/images/chicken.png" />
       </Head>
-      <Flex direction={"column"} as="main" mb={20}>
+      <Flex direction={"column"} as="main">
         <Box
           borderRadius={"30px"}
           bgColor={"blue.100"}
           p={{ base: "8", md: "20" }}
-          mb="16"
         >
           <Flex
             direction={{ base: "column", md: "row" }}
@@ -65,6 +65,8 @@ export default function Home() {
           </Flex>
         </Box>
 
+        <Divider my="10" borderColor={"gray.300"} />
+
         <Box mb={10}>
           <Heading as="h2" size={"lg"} color="gray.600" mb={7}>
             7 Macam Penyakit yang Sering Menjangkit Ayam Broiler
@@ -80,43 +82,43 @@ export default function Home() {
           >
             <CardPenyakit
               title="Avian Influenza"
-              description="Penyakit"
+              description="Penyakit ini lebih dikenal dengan nama Flu Burung merupakan penyakit yang disebabkan oleh virus influenza type A subtipe H5 dan H7."
               href="/informasi"
               imageHref="/images/flu_burung_3.jpg"
             />
             <CardPenyakit
               title="Fowl Cholera"
-              description="Penyakit"
+              description="Biasa disebut dengan Kolera Unggas yang disebabkan oleh bakteri Pasteurella multocida (P.multocida) dan tersebar diseluruh dunia."
               href="/informasi"
               imageHref="https://static.chickin.xyz/blog/wp-content/uploads/2022/06/Chickin-Blog-3-1160x680.png"
             />
             <CardPenyakit
               title="Newcastle Disease"
-              description="Penyakit"
+              description="Penyakit menular akut yang menyerang ayam dan jenis unggas lainnya dengan gejala klinis berupa gangguan pernafasan, pencernaan dan syaraf disertai mortalitas yang sangat tinggi."
               href="/informasi"
               imageHref="https://sinauternak.com/wp-content/uploads/2019/10/Newcastle-disease.jpg"
             />
             <CardPenyakit
               title="Infectious Bronchitis"
-              description="Penyakit"
+              description="penyakit pernapasan akut dan sangat menular pada ayam ditandai dengan adanya gejala seperti terengah-engah, batuk, bersin, ngorok, dan keluarnya sekresi hidung."
               href="/informasi"
-              imageHref="http://www.poultrydvm.com/assets/img/photos/fieldstudyimgs/infectious-bronchitis/2.jpg"
+              imageHref="/images/infectious_bronchitis.jpg"
             />
             <CardPenyakit
               title="Infectious Bursal Disease"
-              description="Penyakit"
+              description="penyakit menular akut pada ayam berumur muda, ditandai dengan peradangan hebat bursa Fabricius dan bersifat imunosupresif yaitu lumpuhnya sistem pertahanan tubuh ayam."
               href="/informasi"
               imageHref="https://d1lg8auwtggj9x.cloudfront.net/images/IBD02.width-820.jpg"
             />
             <CardPenyakit
               title="Chronic Respiratory Disease"
-              description="Penyakit"
+              description="penyakit menular menahun pada ayam yang ditandai dengan sekresi hidung katar, kebengkakan muka, batuk dan terdengarnya suara sewaktu bernafas."
               imageHref="https://i0.wp.com/www.poultryindonesia.com/wp-content/uploads/2019/09/CRD-1.jpg?fit=387%2C256&ssl=1"
               href="/informasi"
             />
             <CardPenyakit
               title="Pullorum"
-              description="Penyakit"
+              description="Biasa dikenal dengan berak putih merupakan penyakit menular pada ayam yang yang disebabkan oleh Salmonella pullorum."
               imageHref="https://www.dictio.id/uploads/db3342/original/3X/f/f/ff077e6942cc38eaf398394735148d2013ab7ad3.jpeg"
               href="/informasi"
             />
