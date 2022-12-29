@@ -48,7 +48,7 @@ export default function Home() {
                 <Button colorScheme={"blue"}>Mulai Deteksi Penyakit</Button>
               </Link>
             </Box>
-            <Flex>
+            <Flex display={{ base: "none", md: "flex" }}>
               <Image
                 src={"/images/chicken.png"}
                 width={200}

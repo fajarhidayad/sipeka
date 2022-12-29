@@ -29,6 +29,8 @@ const Navbar = () => {
             <Spacer />
             <Link href="/diagnosa">Diagnosa Penyakit</Link>
             <Spacer />
+            <Link href="/informasi">Info</Link>
+            <Spacer />
             <Link href="/tentang">Tentang</Link>
           </HStack>
         </Flex>
